@@ -3,11 +3,11 @@ Summary:	Devel::OpProf perl module
 Summary(pl):	Modu³ perla Devel::OpProf
 Name:		perl-Devel-OpProf
 Version:	0.2
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Devel/DevelOpProf-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -21,7 +21,8 @@ Modu³ perla Devel::OpProf.
 %setup -q -n DevelOpProf-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -35,8 +36,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitearch}/Devel/OpProf.pm
-%dir %{perl_sitearch}/auto/Devel/OpProf
-%{perl_sitearch}/auto/Devel/OpProf/OpProf.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Devel/OpProf/OpProf.so
+%{perl_vendorarch}/Devel/OpProf.pm
+%dir %{perl_vendorarch}/auto/Devel/OpProf
+%{perl_vendorarch}/auto/Devel/OpProf/OpProf.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Devel/OpProf/OpProf.so
 %{_mandir}/man3/*
