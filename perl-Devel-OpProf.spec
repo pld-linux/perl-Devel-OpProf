@@ -21,7 +21,7 @@ Modu³ perla Devel::OpProf.
 %setup -q -n DevelOpProf-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
