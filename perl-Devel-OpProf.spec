@@ -3,7 +3,7 @@ Summary:	Devel::OpProf - profile the internals of a Perl program
 Summary(pl):	Devel::OpProf - dostrojenie wewnêtrznych parametrów programu w Perlu
 Name:		perl-Devel-OpProf
 Version:	0.2
-Release:	7
+Release:	8
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Devel/DevelOpProf-%{version}.tar.gz
