@@ -3,7 +3,7 @@ Summary:	Devel::OpProf perl module
 Summary(pl):	Modu³ perla Devel::OpProf
 Name:		perl-Devel-OpProf
 Version:	0.2
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Devel/DevelOpProf-%{version}.tar.gz
