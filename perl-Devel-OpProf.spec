@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Devel-OpProf perl module
 Summary(pl):	Modu³ perla Devel-OpProf
 Name:		perl-Devel-OpProf
@@ -7,7 +8,8 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Devel/DevelOpProf-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -23,7 +25,7 @@ Modu³ perla Devel-OpProf.
 
 %build
 perl Makefile.PL
-make
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
