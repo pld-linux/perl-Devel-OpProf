@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Devel-OpProf perl module
-Summary(pl):	Modu³ perla Devel-OpProf
+Summary:	Devel::OpProf perl module
+Summary(pl):	Modu³ perla Devel::OpProf
 Name:		perl-Devel-OpProf
 Version:	0.2
 Release:	6
@@ -12,10 +12,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Devel-OpProf - Profile the internals of a Perl program.
+Devel::OpProf - Profile the internals of a Perl program.
 
 %description -l pl
-Modu³ perla Devel-OpProf.
+Modu³ perla Devel::OpProf.
 
 %prep
 %setup -q -n DevelOpProf-%{version}
