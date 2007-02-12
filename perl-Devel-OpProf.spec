@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Devel::OpProf - profile the internals of a Perl program
-Summary(pl):	Devel::OpProf - dostrojenie wewnêtrznych parametrów programu w Perlu
+Summary(pl.UTF-8):   Devel::OpProf - dostrojenie wewnÄ™trznych parametrÃ³w programu w Perlu
 Name:		perl-Devel-OpProf
 Version:	0.2
 Release:	8
@@ -16,9 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Devel::OpProf module lets perl keep a count of each internal
 operation in a program so that you can profile your Perl code.
 
-%description -l pl
-Modu³ Devel::OpProf umo¿liwia perlowi zliczanie wszystkich
-wewnêtrznych operacji w programie w celu dostrojenia kodu w Perlu.
+%description -l pl.UTF-8
+ModuÅ‚ Devel::OpProf umoÅ¼liwia perlowi zliczanie wszystkich
+wewnÄ™trznych operacji w programie w celu dostrojenia kodu w Perlu.
 
 %prep
 %setup -q -n DevelOpProf-%{version}
