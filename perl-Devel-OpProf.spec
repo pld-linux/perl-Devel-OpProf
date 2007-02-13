@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Devel::OpProf - profile the internals of a Perl program
-Summary(pl.UTF-8):   Devel::OpProf - dostrojenie wewnętrznych parametrów programu w Perlu
+Summary(pl.UTF-8):	Devel::OpProf - dostrojenie wewnętrznych parametrów programu w Perlu
 Name:		perl-Devel-OpProf
 Version:	0.2
 Release:	8
