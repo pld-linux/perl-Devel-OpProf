@@ -27,6 +27,7 @@ wewnętrznych operacji w programie w celu dostrojenia kodu w Perlu.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %install
