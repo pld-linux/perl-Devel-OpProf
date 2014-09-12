@@ -45,6 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %{perl_vendorarch}/Devel/OpProf.pm
 %dir %{perl_vendorarch}/auto/Devel/OpProf
-%{perl_vendorarch}/auto/Devel/OpProf/OpProf.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Devel/OpProf/OpProf.so
 %{_mandir}/man3/*
